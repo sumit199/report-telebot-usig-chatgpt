@@ -54,7 +54,7 @@ async def welcome(message: types.Message):
     A handler to welcome the user and clear past conversation and context.
     """
     clear_past()
-    await message.reply("Hello! \nI'm chatGPT Telegram bot created by Bappy.\n How can I assist you?")
+    await message.reply("Hello! \nI'm chatGPT Telegram bot created by Sumit.\n How can I assist you?")
 
 
 
