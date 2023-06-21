@@ -19,7 +19,7 @@ class Reference:
 load_dotenv()
 
 # Set up OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("open_api_key")
 
 
 # Create a reference object to store the previous response
@@ -27,7 +27,7 @@ reference = Reference()
 
 
 # Bot token can be obtained via https://t.me/BotFahter
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("token")
 
 
 # Model used in chatGPT
@@ -106,4 +106,4 @@ async def chatgpt(message: types.Message):
 
 
 if __name__ == '__main__':
-    executor.start_polling(dispatcher, skip_updates=True)
+    executor.start_polling(dispatcher, skip_updates=False)
